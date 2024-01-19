@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="82dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="108dp"
+        />
+    <EditText
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="128dp"
+        android:hint=" 이메일 형식으로 입력해주세요."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="191dp" />
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="291dp"
+        android:hint=" 6글자 이상 입력해주세요."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 재확인"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="291dp"
+        android:hint=" 6글자 이상 입력해주세요."/>
+
+    <Button
+        android:layout_width="331dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:text="MySQL_Run"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:onClick="register"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="638dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:layout_width="331dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:text="back"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="638dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:layout_width="331dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:text="Return to Main"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:onClick="return_to_main"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="638dp"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+
+</LinearLayout>
