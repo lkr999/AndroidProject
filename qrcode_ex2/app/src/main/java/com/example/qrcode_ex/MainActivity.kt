@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         val password = "g1234"
 
 //        Class.forName("com.mysql.jdbc.Driver"   Toast.makeText(this,"Call CHK OK ", Toast.LENGTH_LONG).show()
-        return DriverManager.getConnection("jdbc:mysql://10.50.3.163:3306/testDB", "leekr", "g1234")
+        return DriverManager.getConnection("jdbc:mysql://127.0.0.1/android_db", "root", "Tncjf*5180")
     }
 
     private fun getAllUsers(connection: Connection): List<User> {

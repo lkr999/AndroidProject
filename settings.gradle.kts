@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "mysql_ex1"
 include(":app")
+include(":app")
+ 

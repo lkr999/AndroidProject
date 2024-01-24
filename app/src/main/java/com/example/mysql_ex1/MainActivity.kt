@@ -32,13 +32,11 @@ class MainActivity : AppCompatActivity() {
 //        var stmt = conn.createStatement();
 //        var rs = stmt.executeQuery("SELECT * from scanner;")
         Toast.makeText(this, pass, Toast.LENGTH_LONG).show()
-
     }
 
     fun db_sharedP(view: View) {
 
-        lateinit var dbHelper: DBHelper
-        dbHelper=DBHelper.getInstance(this)
+        var dbHelper: DBHelper = DBHelper.getInstance(this)
 
         val date1 = LocalDate.parse("2023-01-01")
         val date2 = LocalDate.parse("2023-03-01")
@@ -48,8 +46,6 @@ class MainActivity : AppCompatActivity() {
         dbHelper.insertReservation(date3)
         dbHelper.insertReservation(111, LocalDate.parse("2023-05-05"))
         dbHelper.updateReservationDate(2, LocalDate.parse("2020-03-01"))
-
-
 
     }
 }
